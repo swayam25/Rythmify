@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --range-slider:            rgb(156 163 175);
+    --range-handle:            rgb(228 16 48);
+    --range-handle-focus:      var(--range-handle);
+    --range-handle-border:     var(--range-handle);
+    --range-handle-inactive:   rgb(107 114 128);
+    --range-range:             rgb(228 16 48);
+    --range-range-inactive:    var(--range-handle-inactive);
+    --range-float:             var(--range-handle-focus);
+    --range-float-text:        rgb(255 255 255);
+    --range-float-inactive:    var(--range-handle-inactive);
+}
+
+html, body { @apply h-full w-full; }
+
+body {
+    @apply bg-surface-100-800-token text-primary-900-50-token;
+    @apply selection:bg-surface-500 selection:text-primary-900;
+    @apply text-[1.2rem];
+    @apply scroll-smooth antialiased leading-relaxed;
+}
+
+svg {
+    @apply fill-token;
+}
+
+* {
+    scrollbar-color: rgb(107 114 128) transparent !important;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+
+@layer components {
+    .rm-bm {
+        @apply m-0 -my-40;
+    }
+}
+
+/* Components */
+.modal-prompt-input {
+    @apply text-base p-3 text-primary-900-50-token outline-none placeholder-primary-500 dark:placeholder-primary-400 border-0;
+}
+
+.rangeSlider {
+    @apply text-sm w-full !absolute !m-0 !rounded-token !h-0.5;
+}
+.rangeHandle {
+    @apply -mt-0.5;
+}
+.rangeBar {
+    @apply !h-0.5 !rounded-token;
+}

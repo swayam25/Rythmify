@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<title>Rythmify | Amplify your moments</title>
+		<link rel="icon" href="/rythmify.webp" />
+		<meta name="description" content="Introducing Rythmify, your go-to web music player that's designed to amplify your moments" />
+		<meta name="theme-color" content="#E41030" />
+		<meta name="author" content="Swayam" />
+		<meta property="og:image" content="/rythmify_banner.webp" />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:image" content="/rythmify_banner.webp" />
+		%sveltekit.head%
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+	</head>
+
+	<body data-theme="rythmify" data-sveltekit-preload-data="hover">
+		<div style="display: contents;" class="h-full w-full">
+			%sveltekit.body%
+		</div>
+	</body>
+
+	<script>
+		// Disable right click
+		document.addEventListener("contextmenu", (event) => event.preventDefault());
+	</script>
+</html>

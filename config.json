@@ -1,0 +1,9 @@
+{
+    "discord": {
+        "client_id": "",
+        "client_secret": ""
+    },
+
+    "server": "http://localhost:2501",
+    "client": "http://localhost:2500"
+}
