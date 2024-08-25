@@ -69,7 +69,7 @@ Get full documentation of internal workings [here](../../wiki)
 5. Add the `http://localhost:2501/auth/callback` to the Discord OAuth2 Redirect URIs
     ![Discord OAuth2 Redirect URIs](./assets/discord_redirect.png)
 
-4. Start the app
+6. Start the app
     - Backend
         ```sh
         cd server
@@ -82,6 +82,6 @@ Get full documentation of internal workings [here](../../wiki)
         npm run dev -- --host --port 2500
         ```
 
-5. URLs
+7. URLs
     - Backend: `http://localhost:2501`
     - Frontend: `http://localhost:2500`
