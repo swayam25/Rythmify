@@ -28,7 +28,7 @@ Get full documentation of internal workings [here](../../wiki)
 
 1. Clone this repository
     ```sh
-    git clone <repository url> rythmify
+    git clone https://github.com/swayam25/Rythmify rythmify
     cd rythmify
     ```
 
