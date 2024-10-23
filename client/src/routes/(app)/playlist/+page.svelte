@@ -34,7 +34,7 @@
         <div class="flex flex-wrap gap-4 transition-all items-center w-full justify-center">
             {#each Array.from({ length: 20 }, (_, i) => i + 1) as i}
                 <div class="flex flex-col rounded-token w-fit p-5 duration-200 items-center justify-center animate-pulse">
-                    <div class="h-32 lg:h-52 w-32 lg:w-52 rounded-token bg-surface-700/40" />
+                    <div class="h-32 lg:h-40 w-32 lg:w-40 rounded-token bg-surface-700/40" />
                     <div class="mt-5">
                         <div class="h-5 w-32 rounded-token bg-surface-700/40" />
                         <div class="h-5 w-32 rounded-token bg-surface-700/40 mt-2" />
@@ -73,9 +73,9 @@
                         class="hover:bg-surface-200/50 hover:dark:bg-surface-700/40 duration-200 p-5 hover:shadow-lg rounded-token w-fit flex flex-col items-center justify-center"
                     >
                         {#if playlist[pl][0] === "EMPTY"}
-                            <div class="h-32 lg:h-52 w-32 lg:w-52 rounded-token bg-surface-700/40" />
+                            <div class="h-32 lg:h-40 w-32 lg:w-40 rounded-token bg-surface-700/40" />
                         {:else}
-                            <img src={playlist[pl][playlist[pl].length - 1].cover} alt={pl} class="h-32 lg:h-52 w-32 lg:w-52 object-cover rounded-token" />
+                            <img src={playlist[pl][playlist[pl].length - 1].cover} alt={pl} class="h-32 lg:h-40 w-32 lg:w-40 object-cover rounded-token" />
                         {/if}
                         <div class="mt-5 max-w-[8rem] overflow-hidden text-center">
                             <h1 title={pl} class="text-base lg:text-lg font-bold truncate">{pl}</h1>

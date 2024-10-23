@@ -87,7 +87,7 @@
 <div class="flex flex-col">
     {#if (userID === 0 || songs === null || songs === undefined) && !(userID === 1)}
         <div class="w-full h-full flex items-center justify-start gap-4 sticky top-0 p-5 animate-pulse">
-            <div class="h-32 lg:h-52 w-32 lg:w-52 rounded-token bg-surface-700/40 flex-shrink-0" />
+            <div class="h-32 lg:h-40 w-32 lg:w-40 rounded-token bg-surface-700/40 flex-shrink-0" />
             <div class="flex flex-col items-start justify-center">
                 <div class="h-5 w-32 rounded-token bg-surface-700/40" />
                 <div class="h-5 w-32 rounded-token bg-surface-700/40 mt-2" />
@@ -124,9 +124,9 @@
     {:else}
         <div class="w-full h-full flex items-center justify-start gap-4 sticky top-0 p-5">
             {#if songs[0] === "EMPTY"}
-                <div class="h-32 lg:h-52 w-32 lg:w-52 rounded-token bg-surface-700/40" />
+                <div class="h-32 lg:h-40 w-32 lg:w-40 rounded-token bg-surface-700/40" />
             {:else}
-                <img src={songs[0].cover} alt={name} class="h-32 lg:h-52 w-32 lg:w-52 object-cover rounded-token" />
+                <img src={songs[0].cover} alt={name} class="h-32 lg:h-40 w-32 lg:w-40 object-cover rounded-token" />
             {/if}
             <div class="flex flex-col items-start justify-center">
                 <p class="text-2xl lg:text-5xl font-bold">
