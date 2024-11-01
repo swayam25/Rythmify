@@ -8,17 +8,17 @@ Amplify your moments
 
 ## 🎬 Preview
 
-- **Main Page**
+- **Search & Play**
 
-    ![Main Page](./assets/main.png)
+    ![Search & Play](./assets/search.gif)
 
 - **Queue**
 
-    ![Queue](./assets/queue.png)
+    ![Queue](./assets/queue.gif)
 
 - **Playlist**
 
-    ![Playlist Page](./assets/playlist.png)
+    ![Playlist](./assets/playlist.gif)
 
 ## 📚️ Documentation
 
