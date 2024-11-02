@@ -60,7 +60,7 @@ Get full documentation of internal workings [here](../../wiki)
 > You can skip the discord developer portal configuration (*step 3 & 4*) if you don't want to use login related features.
 
 5. For backend
-   - Install the dependencies
+   - Install dependencies
         ```sh
         cd server
         python -m venv .venv
@@ -73,7 +73,7 @@ Get full documentation of internal workings [here](../../wiki)
         ```
 
 6. For frontend
-   - Install the dependencies
+   - Install dependencies
         ```sh
         cd client
         npm i
@@ -91,13 +91,14 @@ Get full documentation of internal workings [here](../../wiki)
 
 1. Follow the steps 1-4 from the [installation guide](#-installation). *Ignore if already done.*
 2. For backend
-   - Install the dependencies (*Ignore if already done*)
+   - Install dependencies (*Ignore if already done*)
    - Start the server
         ```sh
         fastapi run --port 2501
         ```
+
 3. For frontend
-    - Install the dependencies (*Ignore if already done*)
+    - Install dependencies (*Ignore if already done*)
     - Build the client
         ```sh
         npm run build
@@ -106,6 +107,7 @@ Get full documentation of internal workings [here](../../wiki)
         ```sh
         npm run preview -- --port 2500
         ```
+
 4. URLs
     - Backend: `http://localhost:2501`
     - Frontend: `http://localhost:2500`
