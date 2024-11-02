@@ -78,7 +78,7 @@ Get full documentation of internal workings [here](../../wiki)
         cd client
         npm i
         ```
-   - Start the server
+   - Start the client
         ```sh
         npm run dev -- --port 2500
         ```
