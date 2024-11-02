@@ -32,22 +32,7 @@ Get full documentation of internal workings [here](../../wiki)
     cd rythmify
     ```
 
-2. Install dependencies
-    - Backend
-        ```sh
-        cd server
-        python -m venv .venv
-        source .venv/bin/activate
-        pip install -r requirements.txt
-        ```
-
-    - Frontend
-        ```sh
-        cd client
-        npm i
-        ```
-
-3. Configure the [`config.json`](./config.json) file
+2. Configure the [`config.json`](./config.json) file
 
     <details>
 
@@ -63,27 +48,67 @@ Get full documentation of internal workings [here](../../wiki)
 
     </details>
 
-4. Copy the `Client ID` and `Client Secret` from the Discord Developer Portal and paste them into the `client_id` and `client_secret` fields, respectively, in the [`config.json`](./config.json) file
+3. Copy the `Client ID` and `Client Secret` from the Discord Developer Portal and paste them into the `client_id` and `client_secret` fields, respectively, in the [`config.json`](./config.json) file
 
     ![Discord Client Information](./assets/discord_client_info.png)
 
-5. Add `http://localhost:2501/auth/callback` to the Discord OAuth2 Redirect URIs
+4. Add `http://localhost:2501/auth/callback` to the Discord OAuth2 Redirect URIs
 
     ![Discord OAuth2 Redirect URIs](./assets/discord_redirect.png)
 
-6. Start the app
-    - Backend
+> [!NOTE]
+> You can skip the discord developer portal configuration (*step 3 & 4*) if you don't want to use login related features.
+
+5. For backend
+   - Install the dependencies
         ```sh
         cd server
+        python -m venv .venv
         source .venv/bin/activate
-        python -m uvicorn main:app --host localhost --port 2501
+        pip install -r requirements.txt
         ```
-    - Frontend
+   - Start the server
+        ```sh
+        fastapi dev --port 2501
+        ```
+
+6. For frontend
+   - Install the dependencies
         ```sh
         cd client
-        npm run dev -- --host --port 2500
+        npm i
+        ```
+   - Start the server
+        ```sh
+        npm run dev -- --port 2500
         ```
 
 7. URLs
     - Backend: `http://localhost:2501`
     - Frontend: `http://localhost:2500`
+
+## 🌐 For Production
+
+1. Follow the steps 1-4 from the [installation guide](#-installation). *Ignore if already done.*
+2. For backend
+   - Install the dependencies (*Ignore if already done*)
+   - Start the server
+        ```sh
+        fastapi run --port 2501
+        ```
+3. For frontend
+    - Install the dependencies (*Ignore if already done*)
+    - Build the client
+        ```sh
+        npm run build
+        ```
+    - Preview the client
+        ```sh
+        npm run preview -- --port 2500
+        ```
+4. URLs
+    - Backend: `http://localhost:2501`
+    - Frontend: `http://localhost:2500`
+
+> [!TIP]
+> Checkout the [deployment guide](https://svelte.dev/docs/kit/adapter-node) for more information.
