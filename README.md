@@ -6,6 +6,10 @@ Amplify your moments
 
 </div>
 
+# what is it?
+
+its a simple music player, written in Svelte and Python by [Swayam](https://github.com/swayam25), featuring many different artists.
+
 ## 🎬 Preview
 
 - **Search & Play**
