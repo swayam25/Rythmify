@@ -66,7 +66,13 @@ async def stream(id: str):
     """Get the song"""
     video_url = "https://www.youtube.com/watch?v=" + id
     try:
-        with yt_dlp.YoutubeDL({"format": "ba*", "skip_download": True}) as ydl:
+        with yt_dlp.YoutubeDL({
+            "quiet": True,
+            "noprogress": True,
+            "ignoreerrors": True,
+            "format": "ba*",
+            "skip_download": True
+        }) as ydl:
             info_dict = ydl.extract_info(video_url, download=False)
             audio = info_dict['url']
         return {
