@@ -108,7 +108,7 @@ Get full documentation of internal workings [here](../../wiki)
         npm run preview -- --port 2500
         ```
 
-4. URLs are same as in the [installation guide](#-installation).
+4. URLs are same as the [installation guide](#-installation).
 
 > [!TIP]
 > Checkout the [deployment guide](https://svelte.dev/docs/kit/adapter-node) for more information.
