@@ -89,7 +89,7 @@ Get full documentation of internal workings [here](../../wiki)
 
 ## 🌐 For Production
 
-1. Follow the steps 1-4 from the [installation guide](#-installation). *Ignore if already done.*
+1. Follow steps 1-4 from the [installation guide](#-installation). *Ignore if already done.*
 2. For backend
    - Install dependencies (*Ignore if already done*)
    - Start the server
