@@ -22,7 +22,7 @@ Amplify your moments
 
 ## 📚️ Documentation
 
-Get full documentation of internal workings [here](../../wiki)
+Get full documentation of internal workings [here](../../wiki).
 
 ## 🚀 Installation
 
@@ -83,11 +83,7 @@ Get full documentation of internal workings [here](../../wiki)
         npm run dev -- --port 2500
         ```
 
-7. URLs
-    - Backend: `http://localhost:2501`
-    - Frontend: `http://localhost:2500`
-
-## 🌐 For Production
+## 🌐 Production
 
 1. Follow steps 1-4 from the [installation guide](#-installation). *Ignore if already done.*
 2. For backend
@@ -107,8 +103,6 @@ Get full documentation of internal workings [here](../../wiki)
         ```sh
         npm run preview -- --port 2500
         ```
-
-4. URLs are same as the [installation guide](#-installation).
 
 > [!TIP]
 > Checkout the [deployment guide](https://svelte.dev/docs/kit/adapter-node) for more information.
